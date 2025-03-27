@@ -73,12 +73,12 @@ const Home: React.FC = () => {
   return (
     <div
       id="home"
-      className="h-screen p-8 flex flex-col gap-6 items-center justify-between md:flex-row"
+      className="container mx-auto px-4 py-16 flex flex-col gap-6 items-center justify-between md:flex-row"
       style={{ backgroundColor: "var(--background-color)" }}
     >
       {/* Left Section */}
       <motion.div
-        className="md:ml-8 text-center space-y-4 md:text-left mt-6 md:mt-0"
+        className="text-center space-y-4 md:text-left mt-6 md:mt-0"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeInOut" }}

@@ -40,7 +40,8 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({
             }}
             date={experience.date}
             iconStyle={{
-                background: isLightMode ? "#FDC435" : experience.iconBg || "#232631", // Button color matches header color
+                background: isLightMode ? "#f76d01" : experience.iconBg || "#232631", // Button color matches header color
+                color: isLightMode ? "#333" : "#fff",
             }}
             icon={
                 experience.icon ? (
@@ -89,7 +90,7 @@ const Experience = () => {
             title: "Associate Software Engineer",
             company_name: "Ahex Technologies.",
             icon: <CiLocationArrow1 />,
-            iconBg: "#FDC435",
+            iconBg: "#f76d01",
             points: [
                 "Expertise in React.js and UI development. Worked with REST APIs, GraphQL , Sockets etc.",
                 "Optimized application performance by refactoring code and improving algorithms.",
@@ -103,7 +104,7 @@ const Experience = () => {
             title: "Naresh IT Training",
             company_name: "Naresh IT Hyderabad",
             icon: <CiGps />,
-            iconBg: "#4CAF50",
+            iconBg: "#f76d01",
             points: [
                 "Took comprehensive training in React.js, JavaScript, Core JAVA, HTML5, and CSS3.",
                 "Focused on mastering foundational and advanced concepts over 5 months.",

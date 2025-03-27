@@ -31,3 +31,7 @@
 .focus\:ring-4:focus {
 	box-shadow: none;
 }
+
+body {
+	background-color: var(--background-color)
+}

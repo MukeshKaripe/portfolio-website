@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 const ContactSection: React.FC = () => {
     const contactInfo = {
         email: "mukeshkaripe@gmail.com",
-        website: "https://nerchuko.in/",
+        website: "https://mukesh-karipe.vercel.app/",
         twitter: "@MukeshKaripe",
         linkedin: "www.linkedin.com/in/mukesh-karipe",
         address: "Hyderabad, Telangana, India",
@@ -111,7 +111,7 @@ const ContactSection: React.FC = () => {
         <div id="contactme"
             style={{
                 backgroundColor: 'var(--background-color)',
-            }} className="lg:p-8 p-2 w-full relative">
+            }} className="container mx-auto px-4  w-full relative">
             <div className="">
                 <div className="">
                     <h2 className="page_title" style={{ color: "var(--text-primary)" }}>Contact Information</h2>

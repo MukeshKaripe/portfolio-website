@@ -2,8 +2,18 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { FaNode, FaReact } from 'react-icons/fa';
 import {
-  SiMongodb, SiExpress, SiSocketdotio, SiMysql, SiWebrtc,
-  SiPostgresql, SiTypescript, SiLinux, SiDocker, SiSequelize
+  SiTypescript, SiDocker,
+  SiMaterialdesign,
+  SiAngular,
+  SiShadcnui,
+  SiBootstrap,
+  SiTailwindcss,
+  SiMui,
+  SiAntdesign,
+  SiPrimeng,
+  SiChedraui,
+  SiDaisyui,
+  SiMambaui
 } from 'react-icons/si';
 
 interface ISkills {
@@ -14,19 +24,14 @@ interface ISkills {
 
 const Skills: ISkills[] = [
   {
-    title: 'Node.js',
-    icon: <FaNode size={24} />,
-    color: 'bg-green-500',
-  },
-  {
-    title: 'Express.js',
-    icon: <SiExpress size={24} />,
-    color: 'bg-green-500',
-  },
-  {
     title: 'React.js',
     icon: <FaReact size={24} />,
     color: 'bg-blue-500',
+  },
+  {
+    title: 'UI Development',
+    icon: <SiMaterialdesign size={24} />,
+    color: 'bg-green-500',
   },
   {
     title: 'TypeScript',
@@ -34,43 +39,48 @@ const Skills: ISkills[] = [
     color: 'bg-yellow-400',
   },
   {
-    title: 'MongoDB',
-    icon: <SiMongodb size={24} />,
+    title: 'Angular UI Development',
+    icon: <SiAngular size={24} />,
     color: 'bg-purple-500',
   },
   {
-    title: 'MySQL',
-    icon: <SiMysql size={24} />,
+    title: 'Shadcn',
+    icon: <SiShadcnui size={24} />,
     color: 'bg-red-500',
   },
   {
-    title: 'PostgreSQL',
-    icon: <SiPostgresql size={24} />,
+    title: 'Bootstrap',
+    icon: <SiBootstrap size={24} />,
     color: 'bg-indigo-600',
   },
   {
-    title: 'Sequelize',
-    icon: <SiSequelize size={24} />,
+    title: 'Tailwind',
+    icon: <SiTailwindcss size={24} />,
     color: 'bg-slate-500',
   },
   {
-    title: 'Sockets',
-    icon: <SiSocketdotio size={24} />,
+    title: 'MUI',
+    icon: <SiMui size={24} />,
     color: 'bg-green-600',
   },
   {
-    title: 'WebRTC',
-    icon: <SiWebrtc size={24} />,
+    title: 'Angular Material',
+    icon: <SiMaterialdesign size={24} />,
     color: 'bg-red-600',
   },
   {
-    title: 'Linux',
-    icon: <SiLinux size={24} />,
+    title: 'Ant Design',
+    icon: <SiAntdesign size={24} />,
     color: 'bg-[#1a30f1]',
   },
   {
-    title: 'Docker',
-    icon: <SiDocker size={24} />,
+    title: 'PrimeNG',
+    icon: <SiPrimeng size={24} />,
+    color: 'bg-[#1a30f1]',
+  },
+  {
+    title: 'Web Responsive Design',
+    icon: <SiMambaui size={24} />,
     color: 'bg-[#1a30f1]',
   },
 ];

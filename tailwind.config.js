@@ -6,14 +6,14 @@ export default {
   ],
   theme: {
     fontFamily: {
-      sans: ["Poppins", "sans-serif"],
-      roboto: ["Roboto", "sans-serif"],
-      rubik: ['Rubik'],
-      dancing: ['"Dancing Script"', 'cursive'],
-      inter: ['"Inter"', 'sans-serif'],
-      edu: ['"Edu AU VIC WA NT Pre"', 'sans-serif'],
-      noto: ['"Noto Serif"', 'serif'],
-      ubuntu: ['"Ubuntu"', 'sans-serif'],
+      sans: ['Open Sans', 'sans-serif'],
+      roboto: ['Open Sans', 'sans-serif'],
+      rubik: ['Open Sans', 'sans-serif'],
+      dancing: ['Open Sans', 'sans-serif'],
+      inter: ['Open Sans', 'sans-serif'],
+      edu: ['Open Sans', 'sans-serif'],
+      noto: ['Open Sans', 'sans-serif'],
+      ubuntu: ['Open Sans', 'sans-serif'],
     },
     extend: {
       colors: {

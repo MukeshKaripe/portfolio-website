@@ -39,7 +39,7 @@ const CarouselCard: React.FC = () => {
             link: "https://github.com/venu123143/whatsapp/",
             url: "https://whatsapp-mongo.onrender.com/",
             image: whatsapp,
-            className: "h-full object-cover"
+            className: "object-cover"
         },
         {
             heading: "Title: Amazon Clone - Your Ultimate E-Commerce Platform",
@@ -64,7 +64,7 @@ const CarouselCard: React.FC = () => {
             link: "https://github.com/venu123143/amazon_front",
             url: "https://amazon-clone-wtj7.onrender.com/",
             image: amazon,
-            className: "h-full object-cover"
+            className: "object-cover"
         },
         {
             heading: "Title: Thapala - Your Internal Email Communication Solution",
@@ -85,7 +85,7 @@ const CarouselCard: React.FC = () => {
             link: "https://github.com/shivam-ahex/Thapala_backend/tree/development",
             url: "https://tapp.ahexlab.com/#/",
             image: thapala,
-            className: "h-fit object-fit"
+            className: "object-fit"
         },
         {
             heading: "Title: Taso - A Social Media Platform for Traders",
@@ -107,7 +107,7 @@ const CarouselCard: React.FC = () => {
             ],
             url: "https://tasosolutions.in",
             image: taso,
-            className: "h-full object-cover"
+            className: "object-cover"
         },
     ];
 
@@ -124,7 +124,7 @@ const CarouselCard: React.FC = () => {
                 onMouseLeave={(e) => {
                     (e.currentTarget as HTMLElement).style.color = "var(--text-primary)";
                 }}
-                className="absolute top-1/2 left-0 z-10 transform rounded-full p-1 -translate-y-1/2 cursor-pointer"
+                className="absolute top-1/2 left-6 z-10 transform rounded-full p-1 -translate-y-1/2 cursor-pointer"
                 onClick={onClick}
             >
                 <FaArrowLeft size={30} />
@@ -145,7 +145,7 @@ const CarouselCard: React.FC = () => {
                 onMouseLeave={(e) => {
                     (e.currentTarget as HTMLElement).style.color = "var(--text-primary)";
                 }}
-                className="absolute top-1/2 right-0 z-10 p-1 transform -translate-y-1/2 cursor-pointer"
+                className="absolute top-1/2 right-6 z-10 p-1 transform -translate-y-1/2 cursor-pointer"
                 onClick={onClick}
             >
                 <FaArrowRight size={30} />
@@ -162,7 +162,7 @@ const CarouselCard: React.FC = () => {
         slidesToScroll: 1,
         arrows: !isMobile,
         autoplay: true,
-        autoplaySpeed: 4000,
+        autoplaySpeed: 400000,
         prevArrow: <PrevArrow />,
         nextArrow: <NextArrow />,
     };
@@ -174,14 +174,14 @@ const CarouselCard: React.FC = () => {
     }, []);
 
     return (
-        <div style={{ backgroundColor: "var(--background-color)" }} id="projects" className="w-full flex flex-col justify-center items-center font-inter">
+        <div style={{ backgroundColor: "var(--background-color)" }} id="projects" className="w-full flex flex-col justify-center items-center font-inter container mx-auto px-4">
             <h2 className="page_title" style={{ color: "var(--text-primary)" }}>My Projects</h2>
             {loading ? (
                 <div className="flex items-center justify-center">
                     <ClipLoader size={50} color="#4A90E2" />
                 </div>
             ) : (
-                <div className="w-11/12 border-t-2 sm:border-l-2 shadow-retro rounded-lg">
+                <div className="w-full border-t-2 sm:border-l-2 shadow-retro rounded-lg">
                     <Slider {...settings}>
                         {carouselData.map((item, index) => (
                             <ProjectCard
@@ -192,7 +192,7 @@ const CarouselCard: React.FC = () => {
                                 image={item.image}
                                 url={item.url}
                                 bulletPoints={item.bulletPoints}
-                                className={item.className}
+                                className={`${item.className} p-4`}
                             />
                         ))}
                     </Slider>
@@ -221,19 +221,19 @@ const ProjectCard: React.FC<CardProps> = ({ heading, description, link, image, u
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }} >
-            <div className="flex flex-col md:flex-row md:h-full h-auto ">
+            <div className="flex flex-col md:flex-row md:h-full h-auto items-center p-8">
                 {/* Left Side: Image */}
-                <div className="hidden md:flex md:w-2/5 flex-shrink-0 justify-center items-center">
+                <div className="hidden md:flex md:w-2/5 h-full flex-shrink-0 justify-center items-center">
                     <img
                         src={image}
                         alt="Project Image"
-                        className={className}
+                        className={`${className} h-full object-contain`}
                     />
                 </div>
 
                 {/* Right Side: Content */}
-                <div className="p-3">
-                    <div className="h-[90%] overflow-y-auto no-scrollbar">
+                <div className="px-16 py-12 h-full">
+                    <div className="h-[90%] overflow-y-auto">
                         <h2 style={{ color: "var(--accent-color)" }} className="text-xl font-bold mb-3 font-rubik">
                             {heading}
                         </h2>
@@ -248,7 +248,7 @@ const ProjectCard: React.FC<CardProps> = ({ heading, description, link, image, u
                             </ul>
                         )}
                     </div>
-                    <div className="flex">
+                    <div className="flex mt-6">
                         {link && (
                             <Link
                                 to={link}

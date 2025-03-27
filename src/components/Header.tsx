@@ -63,7 +63,7 @@ const Header: React.FC = () => {
         <header style={{ backgroundColor: hasShadow ? "var(--background-color)" : "#FDC435" }}
             className={`sticky top-0 z-50 transition-all duration-300`}
         >
-            <div className="flex justify-between items-center max-w-7xl mx-auto px-4 py-3">
+            <div className="flex justify-between items-center mx-auto py-4 container px-4">
                 {/* Logo */}
                 <h1 className="text-2xl font-dancing font-bold" style={{ color: hasShadow ? "var(--text-primary)" : 'black' }}>
                     Mukesh Karipe
