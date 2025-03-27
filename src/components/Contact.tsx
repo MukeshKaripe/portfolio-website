@@ -8,8 +8,8 @@ const ContactSection: React.FC = () => {
     const contactInfo = {
         email: "mukeshkaripe@gmail.com",
         website: "https://nerchuko.in/",
-        twitter: "@venu_reddy_9493",
-        linkedin: "www.linkedin.com/in/venureddy9493/",
+        twitter: "@MukeshKaripe",
+        linkedin: "www.linkedin.com/in/mukesh-karipe",
         address: "Hyderabad, Telangana, India",
         phone: "+91 77998 79698",
         github: "https://github.com/MukeshKaripe"
@@ -34,7 +34,7 @@ const ContactSection: React.FC = () => {
             icon: <FaGithub className="w-8 h-8" />, // Correct icon for GitHub
             title: "GitHub",
             subtitle: "Check out our projects on GitHub",
-            linkText: "@venu123143",
+            linkText: "@MukeshKaripe",
             link: contactInfo.github,
         },
         {
