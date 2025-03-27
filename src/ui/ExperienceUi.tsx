@@ -85,28 +85,28 @@ const Experience = () => {
 
     const experiences = [
         {
-            date: "Jul 2023 - Present",
+            date: "Feb 2023 - Present",
             title: "Associate Software Engineer",
             company_name: "Ahex Technologies.",
             icon: <CiLocationArrow1 />,
             iconBg: "#FDC435",
             points: [
-                "Expertise in Node.js and React.js. Worked with REST APIs, GraphQL , Sockets etc.",
+                "Expertise in React.js and UI development. Worked with REST APIs, GraphQL , Sockets etc.",
                 "Optimized application performance by refactoring code and improving algorithms.",
-                "Worked with multiple databases like MySql, Postgres, Mongodb and Redis.",
-                "Worked with Sequelize ORM in multiple projects.",
+                "Worked with multiple Frame Works like MUI, Shadcn, Bootstrap, PrimeNG and Ant Design.",
+                "Worked with UI Development in Angular projects.",
                 "Used TypeScript in every project.",
             ],
         },
         {
-            date: "Sep 2022 - Mar 2023",
-            title: "Jspiders Training",
-            company_name: "Jspiders (BTM layout) Bangalore",
+            date: "Sep 2022 - Jan 2023",
+            title: "Naresh IT Training",
+            company_name: "Naresh IT Hyderabad",
             icon: <CiGps />,
             iconBg: "#4CAF50",
             points: [
-                "Took comprehensive training in SQL, React.js, JavaScript, HTML, and CSS.",
-                "Focused on mastering foundational and advanced concepts over 8 months.",
+                "Took comprehensive training in React.js, JavaScript, Core JAVA, HTML5, and CSS3.",
+                "Focused on mastering foundational and advanced concepts over 5 months.",
             ],
         },
     ];

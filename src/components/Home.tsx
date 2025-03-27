@@ -98,7 +98,7 @@ const Home: React.FC = () => {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://www.canva.com/design/DAFj-JlZs_I/lYKRtoro-a54diJcflWvuA/view?utm_content=DAFj-JlZs_I&utm_campaign=designshare&utm_medium=link&utm_source=editor"
+            href="src/assets/Mukesh_Karipe(Resume).pdf"
             className="px-8 py-3 block font-edu w-fit text-white font-medium text-lg rounded-lg shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl focus:outline-none focus:ring-4"
             style={{
               background: "linear-gradient(to right, var(--accent-color), var(--accent-color-alt))",

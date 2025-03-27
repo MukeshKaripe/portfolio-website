@@ -1,7 +1,6 @@
-
 .slick-prev:before,
 .slick-next:before {
-    color: black;
+	color: black;
 }
 
 .custom-scrollbar::-webkit-scrollbar {
@@ -26,5 +25,9 @@
 
 
 .page_title {
-    @apply text-3xl font-semibold mb-8 text-center font-rubik
+	@apply text-3xl font-semibold mb-8 text-center font-rubik
+}
+
+.focus\:ring-4:focus {
+	box-shadow: none;
 }

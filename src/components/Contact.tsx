@@ -6,13 +6,13 @@ import { motion } from "framer-motion";
 
 const ContactSection: React.FC = () => {
     const contactInfo = {
-        email: "venugopalreddy9493@gmail.com",
+        email: "mukeshkaripe@gmail.com",
         website: "https://nerchuko.in/",
         twitter: "@venu_reddy_9493",
         linkedin: "www.linkedin.com/in/venureddy9493/",
-        address: "Kavali, Andhra Pradesh, India",
-        phone: "+91 80089 52100",
-        github: "https://github.com/venu123143" // Add the GitHub URL here
+        address: "Hyderabad, Telangana, India",
+        phone: "+91 77998 79698",
+        github: "https://github.com/MukeshKaripe"
     };
 
     const contactOptions = [

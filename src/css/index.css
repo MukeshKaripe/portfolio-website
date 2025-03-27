@@ -34,8 +34,8 @@
   --background-color: #F8F7F3;
   --text-primary: #333333;
   --accent-color: #286F6B;
-  /* --accent-color: #4A90E2; */
-  --accent-color-alt: #007AFF;
+  --accent-color: #9329f6;
+  --accent-color-alt: #a855f7;
   --button-bg: #333333;
   --card-bg: #ffffff;
 }
@@ -43,9 +43,8 @@
 .dark {
   --background-color: #111B21;
   --text-primary: #d1d1d1;
-  --accent-color: #ff4081;
-  --accent-color-alt: #ff79c6;
+  --accent-color: #f76d01;
+  --accent-color-alt: #fd7710;
   --button-bg: #444444;
   --card-bg: #232631;
-  /* --card-bg: #373c3f; */
 }
