@@ -155,7 +155,7 @@ const CarouselCard: React.FC = () => {
         slidesToScroll: 1,
         arrows: !isMobile,
         autoplay: true,
-        autoplaySpeed: 300000,
+        autoplaySpeed: 3000,
         prevArrow: <PrevArrow />,
         nextArrow: <NextArrow />,
     };
@@ -214,7 +214,7 @@ const ProjectCard: React.FC<CardProps> = ({ heading, description, link, image, u
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }} >
-            <div className="flex flex-col md:flex-row md:h-full items-center p-8">
+            <div className="flex flex-col md:flex-row md:h-full items-center md:p-8">
                 {/* Left Side: Image */}
                 <div className="hidden md:flex md:w-2/5 p-4 h-full flex-shrink-0 justify-center items-center">
                     <img
