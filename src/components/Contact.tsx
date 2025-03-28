@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 const ContactSection: React.FC = () => {
     const contactInfo = {
         email: "mukeshkaripe@gmail.com",
-        website: "https://mukesh-karipe-portfolio.netlify.app/",
+        website: "mukesh-karipe-portfolio.netlify.app",
         twitter: "@MukeshKaripe",
         linkedin: "www.linkedin.com/in/mukesh-karipe",
         address: "Hyderabad, Telangana, India",
