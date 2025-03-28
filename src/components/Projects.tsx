@@ -210,11 +210,11 @@ const ProjectCard: React.FC<CardProps> = ({ heading, description, link, image, u
     return (
         <motion.div
             style={{ backgroundColor: "var(--card-bg)" }}
-            className={"relative  rounded-lg  shadow-lg hover:shadow-2xl overflow-hidden transform transition duration-300"}
+            className={"relative  rounded-lg  shadow-lg hover:shadow-2xl overflow-hidden transform transition duration-300 min-h-[976px] max-h-[976px] overflow-auto flex items-center"}
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }} >
-            <div className="flex flex-col md:flex-row md:h-full h-auto items-center p-8">
+            <div className="flex flex-col md:flex-row md:h-full items-center p-8">
                 {/* Left Side: Image */}
                 <div className="hidden md:flex md:w-2/5 p-4 h-full flex-shrink-0 justify-center items-center">
                     <img
@@ -226,7 +226,7 @@ const ProjectCard: React.FC<CardProps> = ({ heading, description, link, image, u
 
                 {/* Right Side: Content */}
                 <div className="p-2 lg:px-16 lg:py-12 h-full">
-                    <div className="h-[90%] overflow-y-auto pr-2">
+                    <div className="h-[90%] max-h-[800px] lg:max-h-unset overflow-y-auto pr-2">
                         <h2 style={{ color: "var(--accent-color)" }} className="text-xl font-bold mb-3 font-rubik">
                             {heading}
                         </h2>
