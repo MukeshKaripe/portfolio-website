@@ -210,7 +210,7 @@ const ProjectCard: React.FC<CardProps> = ({ heading, description, link, image, u
     return (
         <motion.div
             style={{ backgroundColor: "var(--card-bg)" }}
-            className={"relative sm:h-screen rounded-lg  shadow-lg hover:shadow-2xl overflow-hidden transform transition duration-300"}
+            className={"relative  rounded-lg  shadow-lg hover:shadow-2xl overflow-hidden transform transition duration-300"}
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }} >

@@ -80,7 +80,7 @@ const Home: React.FC = () => {
     >
       {/* Left Section */}
       <motion.div
-        className="text-center space-y-4 md:text-center mt-6 md:mt-0"
+        className="text-center space-y-4 md:text-center lg:text-left mt-6 md:mt-0"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeInOut" }}
@@ -95,7 +95,7 @@ const Home: React.FC = () => {
           Hey There,
           <span style={{ color: "var(--accent-color)" }}>
             <div className="p-4 text-center">
-              <div className="sm:text-6xl md:text-4xl lg:text-2xl xl:text-4xl font-bold">
+              <div className="sm:text-4xl lg:text-2xl xl:text-4xl font-bold">
                 <span>I'm a</span>
                 <TypeAnimation
                   sequence={[
@@ -124,7 +124,7 @@ const Home: React.FC = () => {
           Having more than 2 years of experience in web development.
         </p>
 
-        <div className="flex justify-center space-x-4 mt-6">
+        <div className="flex justify-center lg:justify-start space-x-4 mt-6">
           <a
             target="_blank"
             rel="noopener noreferrer"
