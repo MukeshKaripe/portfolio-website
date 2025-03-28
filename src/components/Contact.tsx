@@ -136,7 +136,7 @@ const ContactSection: React.FC = () => {
 
                     <div
                         ref={scrollContainerRef}
-                        className="flex overflow-x-auto pb-6 gap-6 snap-x snap-mandatory no-scrollbar md:flex-wrap md:justify-center flex-wrap lg:flex-nowrap"
+                        className="flex overflow-x-auto pb-6 gap-6 snap-x snap-mandatory no-scrollbar md:flex-wrap md:justify-center lg:justify-start flex-wrap lg:flex-nowrap"
                     >
                         {contactOptions.map((option, index) => (
                             <div
