@@ -2,13 +2,15 @@
 
 import type React from "react"
 import { motion } from "framer-motion"
-import { ReactTyped } from "react-typed"
+// import { ReactTyped } from "react-typed"
+import { TypeAnimation } from 'react-type-animation';
 import profileImage from "../assets/Mukesh.jpeg" // Update path as needed
 
 const ProfileImage: React.FC = () => {
+
   return (
     <motion.div
-      className="relative overflow-hidden w-full md:w-[500px] md:h-[500px] flex items-center justify-center"
+      className="relative overflow-hidden w-full md:w-[300px] md:h-[300px] flex items-center justify-center"
       initial={{ opacity: 0, scale: 0.8 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.8, ease: "easeInOut" }}
@@ -73,28 +75,56 @@ const Home: React.FC = () => {
   return (
     <div
       id="home"
-      className="container mx-auto px-4 py-16 flex flex-col gap-6 items-center justify-between md:flex-row"
+      className="container mx-auto md:px-4 md:py-32 lg:px-4 lg:py-16 flex flex-col gap-6 items-center justify-between"
       style={{ backgroundColor: "var(--background-color)" }}
     >
       {/* Left Section */}
       <motion.div
-        className="text-center space-y-4 md:text-left mt-6 md:mt-0"
+        className="text-center space-y-4 md:text-center mt-6 md:mt-0"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeInOut" }}
       >
-        <h2 className="text-xl sm:text-3xl font-sans font-bold" style={{ color: "var(--text-primary)" }}>
-          Hey There, <br /> I'm{" "}
+        <h2
+          className="text-xl xl:text-3xl font-sans font-bold"
+          style={{
+            color: "var(--text-primary)",
+            backgroundColor: "var(--background-color)"
+          }}
+        >
+          Hey There,
           <span style={{ color: "var(--accent-color)" }}>
-            <ReactTyped strings={[" Frontend Developer..."]} typeSpeed={50} backSpeed={30} loop /> +
-            <ReactTyped strings={[" UI Developer..."]} typeSpeed={100} backSpeed={10} loop />
+            <div className="p-4 text-center">
+              <div className="sm:text-6xl md:text-4xl lg:text-2xl xl:text-4xl font-bold">
+                <span>I'm a</span>
+                <TypeAnimation
+                  sequence={[
+                    ' Frontend Developer',
+                    1000,
+                    ' UI Developer',
+                    1000
+                  ]}
+                  wrapper="span"
+                  speed={50}
+                  repeat={Infinity}
+                  className="
+                transition-colors duration-300
+                dark:text-blue-400 
+                text-blue-600
+                dark:text-shadow-neon 
+                animate-pulse
+                ml-2
+              "
+                />
+              </div>
+            </div>
           </span>
         </h2>
         <p className="mt-2 font-edu text-md font-medium" style={{ color: "var(--text-primary)" }}>
           Having more than 2 years of experience in web development.
         </p>
 
-        <div className="flex justify-center md:justify-start space-x-4 mt-6">
+        <div className="flex justify-center space-x-4 mt-6">
           <a
             target="_blank"
             rel="noopener noreferrer"

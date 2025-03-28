@@ -1,8 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaNode, FaReact } from 'react-icons/fa';
+import { FaReact } from 'react-icons/fa';
 import {
-  SiTypescript, SiDocker,
+  SiTypescript,
   SiMaterialdesign,
   SiAngular,
   SiShadcnui,
@@ -11,8 +11,6 @@ import {
   SiMui,
   SiAntdesign,
   SiPrimeng,
-  SiChedraui,
-  SiDaisyui,
   SiMambaui
 } from 'react-icons/si';
 

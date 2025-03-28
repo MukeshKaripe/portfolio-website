@@ -136,12 +136,12 @@ const ContactSection: React.FC = () => {
 
                     <div
                         ref={scrollContainerRef}
-                        className="flex overflow-x-auto pb-6 gap-6 snap-x snap-mandatory no-scrollbar"
+                        className="flex overflow-x-auto pb-6 gap-6 snap-x snap-mandatory no-scrollbar md:flex-wrap md:justify-center flex-wrap lg:flex-nowrap"
                     >
                         {contactOptions.map((option, index) => (
                             <div
                                 key={index}
-                                className="flex-none w-80 snap-center"
+                                className="flex-none w-full md:w-[48%] lg:w-80 snap-center"
                             >
                                 <div style={{
                                     backgroundColor: 'var(--card-bg)',
