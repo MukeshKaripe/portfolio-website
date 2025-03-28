@@ -75,7 +75,7 @@ const Home: React.FC = () => {
   return (
     <div
       id="home"
-      className="container mx-auto md:px-4 md:py-32 lg:px-4 lg:py-16 flex flex-col gap-6 items-center justify-between"
+      className="container mx-auto md:px-4 md:py-32 lg:px-4 lg:py-16 flex flex-col lg:flex-row gap-6 items-center justify-between"
       style={{ backgroundColor: "var(--background-color)" }}
     >
       {/* Left Section */}
