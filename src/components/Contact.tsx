@@ -9,7 +9,7 @@ const ContactSection: React.FC = () => {
         email: "mukeshkaripe@gmail.com",
         website: "mukesh-karipe-portfolio.netlify.app",
         twitter: "@MukeshKaripe",
-        linkedin: "www.linkedin.com/in/mukesh-karipe",
+        linkedin: "www.linkedin.com/in/mukeshkaripe-ui-developer",
         address: "Hyderabad, Telangana, India",
         phone: "+91 77998 79698",
         github: "https://github.com/MukeshKaripe"

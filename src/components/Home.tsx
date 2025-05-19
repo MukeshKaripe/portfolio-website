@@ -59,10 +59,8 @@ const ProfileImage: React.FC = () => {
         <img
           src={profileImage || "/placeholder.svg"}
           alt="Profile"
-          className="w-full h-full object-cover"
-          style={{
-            objectPosition: "center 30%", // Adjust to focus on the face
-          }}
+          className="w-full h-full object-cover scale-110"
+
         />
       </motion.div>
     </motion.div>
@@ -121,14 +119,14 @@ const Home: React.FC = () => {
           </span>
         </h2>
         <p className="mt-2 font-edu text-md font-medium" style={{ color: "var(--text-primary)" }}>
-          Having more than 2 years of experience in web development.
+          Having more than 2 years 4 Months of experience in web development.
         </p>
 
         <div className="flex justify-center lg:justify-start space-x-4 mt-6">
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="/Mukesh_Karipe(Resume).pdf"
+            href="/Mukesh_Karipe_UI Developer(Resume).pdf"
             className="px-8 py-3 block font-edu w-fit text-white font-medium text-lg rounded-lg shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl focus:outline-none focus:ring-4"
             style={{
               background: "linear-gradient(to right, var(--accent-color), var(--accent-color-alt))",
